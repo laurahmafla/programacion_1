@@ -1,0 +1,5 @@
+t=linspace(-10,10,100);
+x=5*sin(t);
+y=t;
+plot(t,x,t,y,'--k')
+
