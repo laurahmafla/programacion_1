@@ -1,0 +1,17 @@
+x=linspace(0,2*pi,20);   %P.5.6 #1
+y1=sin(x).^2;
+subplot(2,2,1)
+plot(x,y1,'-^')
+title('sin^2(x) vs x')
+
+x=linspace(0,2*pi,20);   %P.5.6 #2
+y2=cos(x).^2;
+subplot(2,2,2)
+plot(x,y2,'--<r')
+title('cos^2(x) vs x')
+
+x=linspace(0,2*pi,20);   %P.5.6 #3
+y3=sin(x).^2 + cos(x).^2;
+subplot(2,2,3)
+plot(x,y3,'>g')
+title(' sin^2(x) + cos^2(x) vs x')
