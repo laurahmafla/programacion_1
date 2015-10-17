@@ -1,0 +1,6 @@
+n=linspace(0,2*pi,100);
+a=(n-1);
+b=(2*pi)^0.5 .*n.^(n-0.5) .*exp(-n);
+plot(n,a,n,b,'-k')
+legend('a vs n','b vs n','location','northwest') 
+grid on
