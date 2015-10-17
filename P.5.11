@@ -1,0 +1,7 @@
+x=linspace(0,2*pi,25);  
+y1=sin(x);
+y2=cos(x);
+plot(x,y1)
+hold on
+grid on
+plot(x,y2,'-o')
