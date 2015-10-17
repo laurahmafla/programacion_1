@@ -2,4 +2,5 @@ x=linspace(0,2*pi,60);
 y1=cos(2*x);
 y2=cos(x).^2-sin(x).^2;
 plot(x,y1,'m',x,y2,'o')
+legend('x vs y1','x vs y2','location','south')
 
