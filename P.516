@@ -1,0 +1,21 @@
+t=linspace(0,2*pi,30);                  %parte a
+r=2;
+x = 1 + r*cos(t); 
+y = 1 + r*sin(t);
+subplot(2,2,1)
+plot(x,y)
+title('A')
+grid on 
+
+t=linspace(0,2*pi,30);                 %parte b
+r=2;
+x = 1 + r*cos(t); 
+y = 1 + r*sin(t);
+r1=3;
+x1=-2 + r1*cos(t);
+y1=1 + r1*sin(t);
+subplot(2,2,2)
+plot(x,y,x1,y1,'r')
+axis([-5 3 -10 6])
+grid on
+title('B')
