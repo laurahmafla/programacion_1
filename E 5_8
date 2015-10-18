@@ -1,0 +1,3 @@
+X = linspace(0,8*pi,21)';
+Y = [tan(X), 16*sin(X)];
+stem(Y)
