@@ -18,7 +18,7 @@ axis ([0 2*pi -2 1.5])%  sets the axis 0? x ? -2pi, and  -2? y ? 1.5
 axis off % removes axis >> axis on % creates axis
 legend ('sin(X)','cos(X)','sin(X)+cos(X)','sin(X)-cos(X)','Location','northwest')
 title('Trigonometric Functions with Fixed axis and Legend')% see Figure 5.68
-gtext('belloX') % i dentifies each curve with a text string
-gtext('feo(X)')
-gtext('bello(X)+feo(X)')
-gtext('bello(X)-feo(X)')% s ee Figure 5.69 where the curves are identified by texts
+gtext('sinX') % i dentifies each curve with a text string
+gtext('cos(X)')
+gtext('sin(X)+cos(X)')
+gtext('sin(X)-cos(X)')% s ee Figure 5.69 where the curves are identified by texts
