@@ -1,0 +1,56 @@
+X=linspace(0,2*pi,20);% creates a 20 element vector X from 0 to 2pi
+Y1=sin(X)% creates a 20 element vector Y1=sin(X) for 0<X<2pi
+Y2=cos(X);% creates a 20 element vector of Y2=cos(X) for 0<X<2pi
+Y3=Y1+Y2;
+Y4 =Y1-Y2;
+plot(X,Y1,'K*:')% plots sin(X) vs X with a dotted(:) black(k) line
+                % i ndicating the points with a star(*) marker
+hold on
+plot(X,Y2,'r--')% plots cos(X) vs X with a dashed (--) red (r) line
+hold on
+plot(X,Y3,'b')% plots [sin(X)+cos(X)] vs X with a solid line (blue)
+hold on
+plot(X,Y4,'g')% plots [sin(X)-cos(X)] vs X with a solid green (g) line
+hold off
+box off % suppresses the figure box
+title('Trigonometric Functions with “Box Off”')% see Figure 5.64
+box on % t urns on the Figure Box
+title ('Trigonometric Functions with “Box On”') % see Figure 5.65
+grid on % turns the grid on
+xlabel('Independent Variable X')% l abels the x axis
+ylabel('Dependent Variable Y')%  labels the y axis
+title('Trigonometric Functions with “Grid On”') % see Figure 5.66
+grid off
+title('Trigonometric Functions with “Grid off”')% see Figure 5.67
+axis ([0 2*pi -2 1.5])%  sets the axis 0? x ? -2pi, and  -2? y ? 1.5
+axis off % removes axis >> axis on % creates axis
+legend ('sin(X)','cos(X)','sin(X)+cos(X)','sin(X)-cos(X)')
+title('Trigonometric Functions with “Grind on”')% see Figure 5.68
+gtext('sinX')% i dentifies each curve with a text string
+gtext('cos(X)')
+gtext('sin(X)+cos(X)')
+gtext('sin(X)-cos(X)')% s ee Figure 5.69 where the curves are identified by texts
+% plot the four functions using steam, in separate subplot
+axis on;
+axis([0 2*pi -1.5 2]);
+subplot(2,2,1)
+stem(X,Y1)
+title('Sin(X) VS X')
+subplot(2,2,2)
+stem(X,Y2)
+title('Cos(X) VS X')
+subplot(2,2,3)
+stem(X,Y3)
+title('Sin(X)+Cos(X) VS X')
+subplot(2,2,4)
+stem(X,Y4)
+title('Sin(X)-Cos(X) VS X')
+title('Sin(X)+Cos(X) VS X')
+see Figure 5.70.
+subplot(2,1,1)
+stairs(X,Y1)
+title('Sin(X) VS X')
+subplot(2,1,2)
+stairs(X,Y2)
+title('Cos(X) VS X')%  plots of :Sin(X) vs X, and Cos(X) vs X using a stair case approximation
+% see Figure 5.71
