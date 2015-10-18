@@ -1,0 +1,21 @@
+% part(b),  plots of Y4d, y5e
+X = linspace(-2,2,36);
+subplot(2,2,3);
+Y41 = X.^2+3;
+Y42 = X.^2+1;
+Y43 = X.^2;
+Y44 = X.^2-1;
+Y45 = X.^2-3;
+plot (X,Y41,X,Y42,X,Y43,X,Y44,X,Y45);
+xlabel('x');
+title ('Y4d = x^2+d, for d = 3,1,0,-1,-3');
+ylabel('Amplitude of Y4d');
+subplot (2,2,4);
+Y51 = -X.^2+2;
+Y52 = -X.^2+1;
+Y53 = -X.^2;
+Y54= -X.^2-1;
+Y55 = -X.^2-2;
+plot (X,Y51,X,Y52,X,Y53,X,Y54,X,Y55);xlabel('x');
+title ('Y5e = -x^2+e, for e = 2,1,0,-1,-2');
+ylabel('Amplitude of Y5e');
