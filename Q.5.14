@@ -93,4 +93,4 @@
  Y75 = exp(-.1*X);
  plot(X,Y71,X,Y72,X,Y73,X,Y74,X,Y75)
  title('Y7k = en(-gx), for g = 5,2,1,0.5,0.1');
- ylabel('Amplitude of Y7k');  xlabel('x') 
+ ylabel('Amplitude of Y7k');  xlabel('x')
