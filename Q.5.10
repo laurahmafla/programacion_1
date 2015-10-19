@@ -3,7 +3,7 @@ format compact
 X = linspace(-2*pi,2*pi,500); %  creates an X vector with 500 element
 Z = sin(X); % creates a 500 element Z vector
 subplot(2,2,1) %  divides the window into 2x2 sub-window
-Y1 = Z+1; % activates sub-window 1,1
+Y1 = Z+1;
 Y2 = 2+Z;
 Y3 = 3+Z;
 plot (X,Y1,X,Y2,X,Y3) % plots Y1 vs X, Y2 vs X, and Y3 vs X
