@@ -2,6 +2,7 @@ x = linspace(2,7);
 y1 = sin(2*x);
 y2 = sin(4*x);
 
+
 figure
 subplot(1,2,1);
 plot(x,y1)
