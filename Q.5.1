@@ -1,0 +1,56 @@
+X=linspace(0,2*pi,20);
+Y1=sin(X);
+Y2=cos(X);
+Y3=Y1+Y2;
+Y4 =Y1-Y2;
+plot(X,Y1,'K*:')
+
+hold on
+plot(X,Y2,'r--')
+hold on
+plot(X,Y3,'b')
+hold on
+plot(X,Y4,'g')
+hold off
+box off 
+title('Trigonometric Functions with “Box Off”')
+box on 
+title ('Trigonometric Functions with “Box On”')
+grid on
+xlabel('Independent Variable X')
+ylabel('Dependent Variable Y')
+title('Trigonometric Functions with “Grid On”')
+grid off
+title('Trigonometric Functions with “Grid off”')
+axis ([0 2*pi -2 1.5])
+axis off 
+legend ('sin(X)','cos(X)','sin(X)+cos(X)','sin(X)-cos(X)')
+title('Trigonometric Functions with Fixed axis and Legend')
+gtext('sinX')
+gtext('cos(X)')
+gtext('sin(X)+cos(X)')
+gtext('sin(X)-cos(X)')
+
+axis on;
+axis([0 2*pi -1.5 2]);
+subplot(2,2,1)
+stem(X,Y1)
+title('Sin(X) VS X')
+subplot(2,2,2)
+stem(X,Y2)
+title('Cos(X) VS X')
+subplot(2,2,3)
+stem(X,Y3)
+title('Sin(X)+Cos(X) VS X')
+subplot(2,2,4)
+stem(X,Y4)
+title('Sin(X)-Cos(X) VS X')
+title('Sin(X)+Cos(X) VS X')
+see Figure 5.70.
+subplot(2,1,1)
+stairs(X,Y1)
+title('Sin(X) VS X')
+subplot(2,1,2)
+stairs(X,Y2)
+title('Cos(X) VS X')
+
